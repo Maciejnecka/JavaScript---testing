@@ -1,3 +1,2 @@
-'use strict';
-console.log('Test');
-console.log('Another test');
+import secretToken from './secretToken';
+console.log(`Test: ${secretToken}`);
