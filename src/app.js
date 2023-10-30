@@ -1,8 +1,3 @@
-(
-    () => { 
-        console.log('webpack') 
-    }
-    // funkcja strzałkowa
-
-)();
-// tzw. IIFE tj. natychmiast wywołujące się wyrażenie funkcyjne
+'use strict';
+console.log('Test');
+console.log('Another test');
