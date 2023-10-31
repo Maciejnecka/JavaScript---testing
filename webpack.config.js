@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'app.min.js',
   },
+  target: 'web',
   module: {
     rules: [
       {
@@ -20,13 +21,14 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    watchFiles: ['./src/*.*'], // tutaj!
+  },
   devtool: 'inline-source-map',
-  target: 'web',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
     }),
-    new Dotenv(),
   ],
 };

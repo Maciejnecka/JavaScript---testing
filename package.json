@@ -9,6 +9,9 @@
     "start": "webpack serve --mode development --open ",
     "build": "webpack --mode production"
   },
+  "jest": {
+    "transformIgnorePatterns": []
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
