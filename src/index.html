@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+    </style>
     <title>devmentor.pl - webpack</title>
   </head>
   <body>
-    <h1>Github Profile</h1>
-    <div id="profile">
-      <img id="avatar" src="" alt="Profile Picture" />
-      <h2 id="username"></h2>
-    </div>
-    <h2>Popular Repositories</h2>
-    <ul id="repositories">
-      <!-- Repositories will be populated here -->
-    </ul>
+    <header class="header"></header>
+    <section class="repositories">
+      <h2 class="repositories__title">Popular Repositories</h2>
+      <ul class="repositories__list"></ul>
+    </section>
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; <span id="currentYear"></span> Maciej Nęcka
+      </p>
+    </footer>
   </body>
 </html>
