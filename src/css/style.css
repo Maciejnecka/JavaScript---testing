@@ -9,7 +9,6 @@ body {
   background: linear-gradient(to bottom, #333, #007f5f);
   color: #fff;
   padding: 20px;
-  font-size: 24px;
   border-radius: 10px;
 }
 
@@ -22,8 +21,12 @@ body {
 }
 
 .header__title {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
+}
+
+.header__bio {
+  font-size: 28px;
 }
 
 .repositories {
@@ -32,8 +35,9 @@ body {
 
 .repositories__title {
   text-align: center;
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 54px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
 }
 
 .repositories__list {
@@ -50,7 +54,7 @@ body {
   padding: 20px;
   height: 250px;
   width: 75%;
-  background-color: rgba(0, 65, 35, 0.715);
+  background: linear-gradient(to bottom, #333, #007f5f);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   color: #fff;
@@ -64,9 +68,13 @@ body {
 
 .repositories__item:hover {
   background-color: #333;
-  border-left: 20px solid rgba(0, 166, 89, 0.715);
-  border-right: 20px solid rgba(0, 166, 89, 0.715);
   transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.repositories__item:hover .repositories__link {
+  color: #00ffbf;
+  transition: color 0.3s ease;
 }
 
 .repositories__link {
@@ -75,10 +83,6 @@ body {
   font-size: 35px;
   font-weight: bold;
   transition: color 0.3s ease;
-}
-
-.repositories__link:hover {
-  color: #007f5f;
 }
 
 .repositories__language {
@@ -91,7 +95,6 @@ body {
   border-radius: 10px;
   text-align: center;
   background: linear-gradient(to top, #333, #007f5f);
-  border-top: 1px solid #555;
   color: #fff;
   padding: 10px;
   font-size: 24px;
